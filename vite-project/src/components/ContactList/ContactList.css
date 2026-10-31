@@ -1,0 +1,25 @@
+.contact-list {
+  text-align: left;
+}
+
+.contact-list h2 {
+  margin-bottom: 18px;
+  color: gainsboro;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.contact-list ul {
+  display: grid;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list p {
+  margin: 80px auto 0;
+  color: silver;
+  font-size: 24px;
+  text-align: center;
+}

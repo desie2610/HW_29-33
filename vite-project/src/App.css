@@ -1,0 +1,163 @@
+.app {
+  width: calc(100% - 32px);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 0 80px;
+  color: silver;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.app-title {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.app h1 {
+  margin: 0;
+  color: gainsboro;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.title-icon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  background-color: black;
+  box-shadow: 0 0 16px dimgray;
+}
+
+.title-icon::before,
+.title-icon::after,
+.title-icon span::before,
+.title-icon span::after {
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+.title-icon::before,
+.title-icon::after {
+  top: 34px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(white, silver);
+}
+
+.title-icon::before {
+  left: 23px;
+}
+
+.title-icon::after {
+  right: 23px;
+}
+
+.title-icon span::before,
+.title-icon span::after {
+  top: 58px;
+  width: 32px;
+  height: 18px;
+  border: 1px solid silver;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(silver, gray);
+}
+
+.title-icon span::before {
+  left: 16px;
+}
+
+.title-icon span::after {
+  right: 16px;
+}
+
+.add-contact-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 68px;
+  padding: 0 28px;
+  border: 1px solid silver;
+  border-radius: 40px;
+  background-color: black;
+  color: silver;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 12px dimgray;
+}
+
+.add-contact-button span {
+  font-size: 42px;
+  line-height: 1;
+}
+
+.add-contact-button:hover {
+  background-color: dimgray;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .app {
+    padding-top: 28px;
+  }
+
+  .app-header {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .app-title {
+    gap: 16px;
+  }
+
+  .app h1 {
+    font-size: 40px;
+  }
+
+  .title-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 22px;
+  }
+
+  .title-icon::before,
+  .title-icon::after {
+    top: 22px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .title-icon::before {
+    left: 16px;
+  }
+
+  .title-icon::after {
+    right: 16px;
+  }
+
+  .title-icon span::before,
+  .title-icon span::after {
+    top: 40px;
+    width: 24px;
+    height: 14px;
+  }
+
+  .title-icon span::before {
+    left: 11px;
+  }
+
+  .title-icon span::after {
+    right: 11px;
+  }
+}

@@ -1,0 +1,116 @@
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 132px;
+  padding: 18px 28px;
+  border: 1px solid dimgray;
+  border-radius: 28px;
+  background-color: black;
+  color: silver;
+  box-shadow: 0 0 8px dimgray;
+}
+
+.contact-avatar {
+  display: grid;
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+  place-items: center;
+  border: 1px solid silver;
+  border-radius: 50%;
+  background: linear-gradient(white, gray);
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact-details {
+  display: grid;
+  flex: 1;
+  gap: 6px;
+  min-width: 0;
+  padding-left: 28px;
+  border-left: 2px solid gray;
+}
+
+.contact-name {
+  overflow: hidden;
+  color: white;
+  font-size: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact-number {
+  color: silver;
+  font-size: 19px;
+}
+
+.delete-button {
+  display: grid;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid silver;
+  border-radius: 18px;
+  background-color: black;
+  color: silver;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: dimgray;
+  color: white;
+}
+
+.delete-button svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    gap: 14px;
+    min-height: 100px;
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .contact-avatar {
+    flex-basis: 54px;
+    width: 54px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .contact-details {
+    gap: 4px;
+    padding-left: 14px;
+  }
+
+  .contact-name {
+    font-size: 20px;
+  }
+
+  .contact-number {
+    font-size: 15px;
+  }
+
+  .delete-button {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+  }
+
+  .delete-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}
